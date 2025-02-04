@@ -166,7 +166,7 @@ def import_iris_dataset():
     else:
         print("data-fa14 repository already exists.")
     
-    # Assume the Iris dataset file is named 'iris.csv' and located at the repository root.
+    # iris dataset path
     iris_csv_path = os.path.join("data", "imported_data", "data", "iris.csv")
     
     if not os.path.exists(iris_csv_path):
@@ -176,7 +176,7 @@ def import_iris_dataset():
     df = pd.read_csv(iris_csv_path)
     print("Columns in Iris dataset:", df.columns.tolist())
     
-    # Attempt to extract 'sepal_length' and 'sepal_width' columns (adjust names if necessary)
+    # Attempt to extract 'sepal_length' and 'sepal_width'
     try:
         data_2d = df[['sepal_length', 'sepal_width']].to_numpy()
         columns_used = ['sepal_length', 'sepal_width']
@@ -201,7 +201,7 @@ def import_iris_dataset():
 # Main Function
 # ===============================
 def main():
-    # Update directories to match the assignment (e.g., MOD550/data)
+    # Update directories
     data_dir = os.path.join("data")
     ensure_directory(data_dir)
     
@@ -236,7 +236,7 @@ def main():
     save_metadata(combined_metadata, combined_metadata_file)
 
     # ------------------------------------------------------------
-    # 6. Import an external dataset (the Iris dataset from UIUC data-fa14).
+    # 6. Import an external dataset (the Iris dataset).
     # ------------------------------------------------------------
     imported_dataset_file = os.path.join(data_dir, "imported_dataset.csv")
     imported_metadata_file = os.path.join(data_dir, "imported_metadata.json")
