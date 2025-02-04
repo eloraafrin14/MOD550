@@ -1,0 +1,10 @@
+{
+    "source": "Iris dataset from UIUC data-fa14 repository",
+    "file": "data/imported_data/data/iris.csv",
+    "columns_used": [
+        "sepal_length",
+        "sepal_width"
+    ],
+    "description": "2D dataset extracted from the Iris dataset by selecting two numerical features: sepal length and sepal width.",
+    "truth": "No explicit model; data extracted from real measurements."
+}

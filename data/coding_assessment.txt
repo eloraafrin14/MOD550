@@ -1,0 +1,13 @@
+Coding Standards Assessment:
+
+Repository 1: Requests (https://github.com/psf/requests)
+- Adheres closely to PEP8 guidelines and includes comprehensive docstrings.
+- The codebase is modular and highly readable, making it an excellent example of good coding practices.
+
+Repository 2: Flask (https://github.com/pallets/flask)
+- Demonstrates a clear and consistent coding style with a well-organized codebase.
+- Its modular design, detailed documentation, and effective use of design patterns contribute to its maintainability.
+
+Repository 3: Django (https://github.com/django/django)
+- Enforces strict coding standards despite being a large framework.
+- Features comprehensive testing, thorough documentation; and a clear separation of concerns, making it a strong model for code quality and maintainability.
